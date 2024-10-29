@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: inside;
+  /* border: 1px solid red; */
+}
+
+ol {
+  list-style: none;
+  list-style-type: repeating-emoji;
+}
+
+li {
+  border: 1px solid green;
+}
+
+@counter-style repeating-emoji {
+  system: cyclic;
+  symbols: 🌞 👍 👏 😎 💯 😅;
+  suffix: "🌞";
+}
+
+#cat-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#picture-div {
+  border: 3px solid black;
+  width: 500px;
+  height: 500px;
+}

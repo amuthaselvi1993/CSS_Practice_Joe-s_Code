@@ -1,0 +1,26 @@
+p {
+  color: brown;
+  background-color: turquoise;
+  font-size: 1em;
+  font-family: "Nerko One", cursive;
+}
+
+h2 {
+  color: green;
+  background-color: black;
+}
+
+#cool-heading {
+  color: white;
+}
+
+.even-cooler-heading {
+  color: orange;
+  background-color: purple;
+}
+
+#mountain-img {
+  scale: 0.5;
+  /* width: 500px;
+  height: 500px; */
+}

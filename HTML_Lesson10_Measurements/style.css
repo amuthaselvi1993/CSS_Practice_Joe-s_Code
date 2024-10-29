@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+/* vmin: 1% of the smaller dimension (either width or height).
+vmax: 1% of the larger dimension. */
+#hero {
+  width: 100vw;
+  height: 1vmin;
+  background-color: aqua;
+}
+
+/* Pixels (px): For exact, fixed measurements when precision is key, but not recommended for responsive designs. */
+#p1 {
+  font-size: 24px;
+}
+/* em: When you want to scale elements based on their parent’s font size, often used for typography or spacing. */
+#p2 {
+  font-size: 1em;
+}
+/*  rem: Best for scalable layouts that stay consistent across the document, especially for fonts and padding/margins. */
+#p3 {
+  font-size: 1rem;
+}
+
+#p4 {
+  max-width: 70ch;
+}
+
+div {
+  display: inline-block;
+}
+
+#div1 {
+  border: 2px solid black;
+  width: 30%;
+  height: 100px;
+}
+
+#div2 {
+  border: 2px solid blue;
+  width: 30%;
+  height: 100px;
+}
+
+#div3 {
+  border: 2px solid red;
+  height: 100px;
+  max-width: 30%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#info-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}
+
+.textbox {
+  width: 50%;
+  font-size: calc(1vw + 10px);
+  max-width: 50ch;
+}
+
+#fake-image {
+  background-color: brown;
+  width: 50%;
+  height: 200px;
+}
+
+.box {
+  position: absolute;
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+#box1 {
+  background-color: red;
+}
+#box2 {
+  z-index: 2;
+  background-color: blue;
+  height: 300px;
+}
+#box3 {
+  z-index: 1;
+  background-color: green;
+  width: 300px;
+}

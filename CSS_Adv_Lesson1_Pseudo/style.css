@@ -1,0 +1,58 @@
+section {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pseudo-classes */
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  font-size: 20px;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a:focus {
+  color: yellow;
+}
+
+section:nth-child(even) {
+  background-color: lightcoral;
+}
+
+/* Pseudo-elements */
+#paragraph::first-line {
+  font-size: 12px;
+}
+
+#paragraph::first-letter {
+  font-size: 24px;
+}
+
+p::before {
+  content: "😎";
+}
+
+p::after {
+  content: "😔";
+}
+
+p::marker {
+  color: red;
+}
+
+p::selection {
+  background-color: black;
+  color: white;
+}

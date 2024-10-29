@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+  </head>
+  <body>
+    <section id="static">
+      <div id="static-text" class="textbox">
+        <h2>Position: Static</h2>
+        <p>HTML elements are positioned static by default.</p>
+        <p>
+          Static positioned elements are not affected by the top, bottom, left
+          and right properties.
+        </p>
+        <p>
+          An element with position: static; is not positioned in any special
+          way, it is always positioned according to the normal flow of the page.
+        </p>
+      </div>
+      <div id="static-container" class="container">
+        <div class="static-box inline">This div is position static!</div>
+        <div class="static-box inline">We go from top to bottom,</div>
+        <div class="static-box inline">from left to right in the flow</div>
+        <div class="static-box inline">
+          Elements which are display: inline; are happy to share their row
+        </div>
+        <div class="static-box">
+          Elements which are display:block; will always take up a whole row to
+          themselves
+        </div>
+      </div>
+    </section>
+    <section id="relative">
+      <div id="relative-text" class="textbox">
+        <h2>position: relative;</h2>
+        <p>
+          An element with position: relative; is positioned relative to its
+          normal position. Using position: relative opens up the use of top,
+          right, bottom, left in CSS.
+        </p>
+
+        <p>
+          Setting the top, right, bottom, and left properties of a
+          relatively-positioned element will cause it to be adjusted away from
+          its normal position. Other content will not be adjusted to fit into
+          any gap left by the element.
+        </p>
+        <p>
+          The other use of position:relative is to allow child elements with
+          position:absolute to relate to it. We'll come to this later!
+        </p>
+      </div>
+      <div id="relative-container" class="container">
+        <div class="relative-box" id="relative-1">left:10, top:10</div>
+        <div class="relative-box">no changes</div>
+        <div class="relative-box">no changes</div>
+        <div class="relative-box" id="relative-2">bottom:10, right:10</div>
+        <div class="relative-box">no changes</div>
+      </div>
+    </section>
+    <section id="fixed">
+      <div id="fixed-text" class="textbox">
+        <h2>position: fixed;</h2>
+        <p>
+          An element with position: fixed; is positioned in regards to to the
+          viewport, which means it always stays in the same place even if the
+          page is scrolled. The top, right, bottom, and left properties are used
+          to position the element.
+        </p>
+        <p>
+          A fixed element does not leave a gap in the page where it would
+          normally have been located.
+        </p>
+        <div id="fixed-box">This div element has position: fixed;</div>
+      </div>
+    </section>
+    <section id="absolute">
+      <div id="absolute-text" class="textbox">
+        <h2>position: absolute;</h2>
+        <p>
+          An element with position: absolute; is positioned relative to the
+          nearest positioned ancestor (instead of positioned relative to the
+          viewport, like fixed).
+        </p>
+        <p>
+          However; if an absolute positioned element has no positioned
+          ancestors, it uses the document body, and moves along with page
+          scrolling.
+        </p>
+        <p>
+          Note: Absolute positioned elements are removed from the normal flow,
+          and can overlap elements.
+        </p>
+      </div>
+      <div id="absolute-container" class="container">
+        <div class="static-box"></div>
+        <div class="static-box"></div>
+        <div class="static-box"></div>
+        <div class="static-box"></div>
+        <div class="static-box"></div>
+        <div id="absolute-box">I'm positioned absolute!</div>
+      </div>
+    </section>
+
+    <!-- Sticky section -->
+    <section id="sticky">
+      <nav id="navbar">
+        <a class="active" href="">home</a>
+        <a href="">News</a>
+        <a href="">Contact</a>
+      </nav>
+      <div id="sticky-text" class="textbox">
+        <p>
+          An element with position: sticky; is positioned based on the user's
+          scroll position.
+        </p>
+
+        <p>
+          A sticky element toggles between relative and fixed, depending on the
+          scroll position. It is positioned relative until a given offset
+          position is met in the viewport - then it "sticks" in place (like
+          position:fixed).
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

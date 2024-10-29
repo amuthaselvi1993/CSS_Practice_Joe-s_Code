@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: rgb(20, 20, 94);
+  color: white;
+}
+
+ol {
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section:nth-child(odd) {
+  background-color: lightblue;
+}
+
+#grey {
+  background-color: grey;
+}
+
+#light-grey {
+  background-color: lightgray;
+}
+
+#dark-grey {
+  background-color: darkgray;
+}
+
+#blue {
+  background-color: lightseagreen;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+}
+#Home {
+  display: flex;
+}
+
+/* Media-Queries can be used to change CSS when the viewport reaches certain 'breakpoints' in width */
+
+@media only screen and (max-width: 600px) {
+  #Home {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  ol {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  li {
+    padding: 5px 2px;
+  }
+}
